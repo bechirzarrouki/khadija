@@ -1,0 +1,43 @@
+.p{
+    top:0;
+   }
+   .imprimer{
+       padding:25px;
+       height: 40%;
+       width:60%;
+      /* background-color: rgba(255, 255, 255, 0.129);*/
+      background-color:white;/*rgb(255, 255, 255);*/
+      border: 1px solid black;
+       backdrop-filter: blur(30px);
+       box-shadow: 0 0 10px rgba(0,0,0,.2);
+       border-radius: 2px;
+       position: fixed;
+       margin:auto;
+      left:200px;
+       text-align: center;
+       margin-top: 100px;
+   }
+   /*partie qui contintient le text a imprimer */
+   .print{
+       height: 90px;
+       width: 150px;
+       text-align: center;
+       font-size: 14px;
+       text-transform: capitalize;
+     
+   }
+   
+   .printbnt{
+       width: 50%;
+       height: 30px;
+       font-size: 14px;
+       text-transform: capitalize;
+       color:black;
+       background:#bbb9b9b5;
+       cursor: pointer;
+       border: 1.2px solid black;
+       margin-top: 10px;
+      margin-top:110px;
+      margin-left: 260px;
+   }
+   

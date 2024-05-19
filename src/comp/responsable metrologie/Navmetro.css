@@ -1,0 +1,52 @@
+.navmetro{
+    height:70px;
+    width: 100%;
+    background-color:rgb(216, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.navmetro .navtoggle{
+    display: none;
+   
+  }
+.logonavm{
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+.navlinkmetro{
+    background-color: transparent; 
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: relative;
+    height: 100%; 
+    color:rgb(57, 17, 85);
+    margin-right: 10px;
+}
+.navlinkmetro li{
+    list-style: none;
+    margin: 0;
+    background-color: transparent; 
+    height: 100%;
+    color: black;
+}
+.linkmetro{
+    margin: 15px;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    height: 50px;
+    text-decoration: none;
+    background-color:white;
+    display: flex;
+    align-items:center;
+    text-decoration: underline;
+}
+.iconmetro{
+    background-color:transparent;
+    margin-right: 8px;
+}

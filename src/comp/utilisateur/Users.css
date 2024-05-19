@@ -1,0 +1,451 @@
+/*utulisateur*/
+.users{
+    padding:25px;
+    width:82%;
+    height:13%;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 1px;
+    position:absolute;
+    left:270px;
+    text-align: center;
+    margin-top: 130px;
+}
+/*side bar */
+.navside{
+    top:70px;
+    left:0;
+    height: 100%;
+    width: 17%;
+    position: fixed;
+    background-color:rgb(222, 216, 216);
+    padding-top: 20px;
+  }
+ .icondata{
+    background-color: transparent;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+  }
+/*liste des users*/
+    .userrecherche{
+        padding:25px;
+        width:82%;
+        height:13%;
+       background-color:white;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position:absolute;
+        left:270px;
+        text-align: center;
+        margin-top: 130px;
+    }
+   .userrecherche input{
+        text-align: center;
+        width: 80%;
+        height: 30px;
+        background:transparent;   
+        outline: none;
+        border: 1px solid black;
+        border-radius: 2px;
+        font-size: 17px;
+        color :black;
+        margin-left: 17px;
+        margin-bottom:10px;
+    }
+    .userrecherche input:focus{
+        transform: scale(0.97);
+        margin-left: 17px;
+        border-color:  rgb(57, 17, 85) ;
+        box-shadow:0px 0px 1px rgb(57, 17, 85) ; ;
+    }
+    .userrecherche input::placeholder{
+        color:black;
+        font-size: 10px;
+    }
+    .listesdesuser{
+        padding:10px;
+        width:85%;
+        height:100%;
+        background-color:white;
+        backdrop-filter: blur(50px);
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position:absolute;
+        left:270px;
+        text-align: center;
+        margin-top: 240px; 
+    }
+    #lue{    
+        text-align: left;
+        font-size: 18px;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+    .listesdesuser p{
+        font-size: 14px;
+        background-color: white;
+    }
+    .listesdesuser li{
+        background-color: white;
+        font-size: 16px;
+        margin-top: 20px;
+       list-style: none;
+    }
+ /* page consulter */   
+    .consultpage{
+        padding:25px;
+        width:85%;
+        height:100%;
+       background-color:white;
+        backdrop-filter: blur(50px);
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position:absolute;
+        left:270px;
+        text-align: center;
+        margin-top: 130px;
+    }    
+    .entet{
+        display: flex;
+        justify-content:space-between;
+        width:91% ;
+        background-color: transparent;
+    }
+    .entet p{
+        background-color:  transparent;
+        font-size: 18px;
+    }
+    /*ajouter user*/
+    .ajoutuser{
+        padding:25px;
+        width:82%;
+        height:58%;
+       background-color:white;
+        backdrop-filter: blur(50px);
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position: fixed;
+        left:270px;
+        text-align: left;
+        margin-top: 130px;
+   }
+   .ajoutuser label{
+       color:black;
+      background-color:transparent; 
+       font-size: 16px;
+       margin-left: 10px;
+       margin-bottom: 10px;
+   }
+   .ajoutuser input::placeholder{
+       color:black;
+       font-size: 10px;
+   }
+   .ajoutuser input{
+       text-align: center;
+       width: 80%;
+       height: 30px;
+       background:transparent;   
+       outline: none;
+       border: 1px solid black;
+       border-radius: 2px;
+       font-size: 14px;
+       color :black;
+       margin-left: 17px;
+       margin-bottom:10px;
+   }
+   .ajoutuser input:focus{
+       transform: scale(0.97);
+       margin-left: 17px;
+       border-color:  rgb(57, 17, 85) ;
+       box-shadow:0px 0px 1px rgb(57, 17, 85) ; 
+   }
+   #mode_dacces{
+       text-align: center;
+       width: 80%;
+       height: 30px;
+       background:transparent;   
+       outline: none;
+       border: 1px solid black;
+       border-radius: 2px;
+       font-size: 14px;
+       color :black;
+       margin-left: 17px;
+       margin-bottom:10px;
+   }
+   .options{
+       color:black;
+       font-size: 10px;
+       background-color:transparent; 
+   }
+   .nompage{
+       position: fixed;
+       margin-top: 85px;
+       margin-left: 270px;
+   }
+   .nompage p{
+       font-size: 25px;
+   }
+   .nompage p:hover{
+       text-shadow: 2px 2px 5px rgb(57, 17, 85) ;
+   }
+
+
+
+
+   @media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+    .navside{
+        margin-top: 12px;
+        display:inline;
+        background-color: transparent;
+      }
+     .icondata{
+        margin-right: 10px;
+        width: 14px;
+        height: 14px;
+        margin-top: 10px;
+      }
+      .users{
+       margin-left:10;
+        height:100%;
+        width: 63%;
+        border-radius: 1px;
+        text-align: left;
+    }
+
+.ajoutuser,
+.consultpage,
+.listesdesuser
+{
+    height:100%;
+    width: 62%;
+        text-align: left;
+        margin-top: 130px;
+   }
+   .ajoutuser label{ 
+       font-size: 14px;
+       margin-left: 9px;
+       margin-bottom: 5px;
+   }
+   .ajoutuser input::placeholder{
+       color:black;
+       font-size: 9px;
+   }
+   .ajoutuser input{
+       text-align: center;
+       width: 65%;
+       height: 30px;  
+       font-size: 13px;
+   }
+   .ajoutuser input:focus{
+       transform: scale(0.97);
+       margin-left: 17px;
+       border-color:  rgb(57, 17, 85) ;
+       box-shadow:0px 0px 1px rgb(57, 17, 85) ; 
+   }
+   #mode_dacces{
+    text-align: center;
+    width: 65%;
+    height: 30px;  
+    font-size: 13px;
+}
+.options{
+    color:black;
+    font-size: 10px;
+    background-color:transparent; 
+}
+.nompage{
+    margin-top: 100px;
+    margin-left: 270px;
+}
+.nompage p{
+    font-size: 20px;
+}
+.entet{
+    width:60% ;
+}
+.entet p{
+    background-color:  transparent;
+    font-size: 16px;
+}
+.userrecherche input{
+    width: 20%;
+    font-size: 14px;
+}
+.userrecherche{
+    width:50%;
+    height:10%;
+    left: 0;
+    text-align: left;
+    top:200px;
+}
+}
+@media (max-width: 576px) {
+    .navside{
+        margin-top: 12px;
+        display:inline;
+        background-color: transparent;
+      }
+     .icondata{
+        margin-right: 10px;
+        width: 14px;
+        height: 14px;
+        margin-top: 10px;
+      }
+      .users{
+       margin-left:10;
+        height:100%;
+        width: 63%;
+        border-radius: 1px;
+        text-align: left;
+    }
+
+.ajoutuser,
+.consultpage,
+.listesdesuser
+{
+    height:100%;
+    width: 62%;
+        text-align: left;
+        margin-top: 130px;
+   }
+   .ajoutuser label{ 
+       font-size: 14px;
+       margin-left: 9px;
+       margin-bottom: 5px;
+   }
+   .ajoutuser input::placeholder{
+       color:black;
+       font-size: 9px;
+   }
+   .ajoutuser input{
+       text-align: center;
+       width: 40%;
+       height: 30px;  
+       font-size: 13px;
+   }
+   #mode_dacces{
+    text-align: center;
+    width: 40%;
+    height: 30px;  
+    font-size: 13px;
+}
+.options{
+    color:black;
+    font-size: 10px;
+    background-color:transparent; 
+}
+.nompage{
+    margin-top: 100px;
+    margin-left: 270px;
+}
+.nompage p{
+    font-size: 20px;
+}
+.entet{
+    width:60% ;
+}
+.entet p{
+    background-color:  transparent;
+    font-size: 16px;
+}
+.userrecherche input{
+    width: 20%;
+    font-size: 14px;
+}
+.userrecherche{
+    width:90%;
+    height:10%;
+    left: 0;
+    text-align: left;
+    top:200px;
+}  
+
+}
+
+
+
+  
+  .menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    color: red;
+  }
+  
+  .nav-menu {
+    background-color:blue;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+    transition: 450ms;
+  }
+  
+  .nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+  }
+  
+  .nav-text a {
+    text-decoration: none;
+    color:red;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
+  
+  .nav-text a:hover {
+    background-color:yellow;
+    color: #fff;
+  }
+  
+  .nav-menu-items {
+    width: 100%;
+  }
+  
+  .navbar-toggle {
+    background-color: red;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  span {
+    margin-left: 16px;
+  }
+  .ReactModal__Content {
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    margin: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+}

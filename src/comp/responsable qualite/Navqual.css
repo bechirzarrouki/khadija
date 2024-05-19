@@ -1,0 +1,53 @@
+.navqual{
+    height:79px;
+  width: 100%;
+  background-color: white;
+  border:2 px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(30px);
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+position: fixed;
+}
+.navqual .navtoggle{
+    display: none;
+   
+  }
+.logonavq{
+    width:200px;
+    height:200px;
+    cursor: pointer;
+    margin: 15px;
+    margin-left: 10px;
+}
+.navlinkqual{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: relative;
+    height: 100%
+}
+.navlinkqual li{
+    list-style: none;
+    margin: 0;
+    background-color:white;
+    height: 100%;
+    color: black;
+}
+.linkqual{
+    margin: 15px;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    height: 50px;
+    text-decoration: none;
+    background-color:white;
+    display: flex;
+    align-items:center;
+    text-decoration: underline;
+}
+.iconqual{
+    background-color:transparent;
+    margin-right: 8px;
+}

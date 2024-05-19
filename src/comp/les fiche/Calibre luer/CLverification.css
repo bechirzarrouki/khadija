@@ -1,0 +1,227 @@
+/*.div1 img{
+    width: 200px;
+    height: 100px;
+}
+.verficationcalibrelue{
+    text-align: center;
+   height: 60%;
+   width:60%;
+   margin-top: 20px;
+   background-color: white;
+   margin:auto;
+   }
+   
+   .titre{
+   
+       text-align: center;
+       background-color: white;
+   }
+   .titre h1,h2,h3,h4{
+       background-color: white;
+   }
+   .formulair{
+       text-align: center;
+       background-color: white;
+       margin-top: 10px;
+   }
+   .formulair input::placeholder{
+       color:black;
+       font-size: 14px;
+   }
+   .formulair input{
+       text-align: center;
+       width: 20%;
+       height: 30px;
+       background:transparent;   
+       outline: none;
+       border: 1px solid black;
+       border-radius: 2px;
+       font-size: 16px;
+       color :black;
+       margin-left: 10px;
+       margin-bottom: 10px;
+   }
+   .formulair label{
+       color:black;
+       background-color:transparent; 
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+   }
+   .div1{
+       background-color: white;
+   }
+   .div1 h4,h5{
+       background-color: white;
+   }
+   .div1 p{
+       background-color: white;
+       font-size: 15px;
+       text-transform: capitalize;
+   }
+   .div1 label{
+       color:black;
+       background-color:transparent; 
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+   }
+   .div2{
+       background-color: white;
+   }
+   .div2 h4,h5{
+       background-color: white;
+   }
+   .div2 p{
+       background-color: white;
+       font-size: 15px;
+       text-transform: capitalize;
+   }
+   .div2 label{
+       color:black;
+       background-color:transparent; 
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+   }
+   .div2 input{
+       text-align: center;
+       width: 20%;
+       height: 30px;
+       background:transparent;   
+       outline: none;
+       border: 1px solid black;
+       border-radius: 2px;
+       font-size: 16px;
+       color :black;
+       margin-left: 10px;
+       margin-bottom: 10px;
+   }
+   .div2 input::placeholder{
+       color:black;
+       font-size: 14px;
+   }
+   .div3{
+       background-color: white;
+   }
+   .div3 h4,h5{
+       background-color: white;
+   } 
+   .div3 input{
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    background:transparent;   
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 16px;
+    color :black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+   }
+   .div3 label{
+    color:black;
+    background-color:transparent; 
+     font-size: 16px;
+     margin-left: 10px;
+     margin-bottom: 10px;
+   }
+   .div3 input::placeholder{
+    color: black;
+    }
+   .div3 p{
+       background-color: white;
+       font-size: 15px;
+   }
+   .div4{
+    background-color: white;
+   }
+   .div4 input{
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    background:transparent;   
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 16px;
+    color :black;
+    margin-left: 10px;
+    margin-bottom: 10px
+   }
+   .div4 label{
+    color:black;
+    background-color:transparent; 
+     font-size: 16px;
+     margin-left: 10px;
+     margin-bottom: 10px;
+   }
+   .div4 input::placeholder{
+    color :black;
+   }
+   .result{
+       background-color: white;
+   }
+   .result h4,h5{
+       background-color: white;
+   }
+   .result {
+       color:black;
+   background-color:white; 
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+   }
+   .result input{
+       text-align: center;
+       width: 10px;
+       height: 10px;
+       background:transparent;   
+       outline: none;
+       border: 1px solid black;
+       border-radius: 2px;
+       font-size: 16px;
+       color :black;
+       margin-left: 10px;
+       margin-bottom: 10px;
+   }
+   .result label{
+       background-color:white; 
+       color:black;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+   }
+   .footer{
+       background-color:white; 
+   }
+   .footer h5,h6,span,p{
+       background-color:white; 
+   }
+   .footer input{
+       text-align: center;
+       width: 20%;
+       height: 30%;
+       background:transparent;   
+       outline: none;
+       border: 1px solid black;
+       border-radius: 2px;
+       font-size: 16px;
+       color :black;
+       margin-left: 10px;
+       margin-bottom: 10px;
+   }
+   .footer input::placeholder{
+       color :black;
+   }
+   .footer img{
+       width:100px;
+       height: 100px;
+   }
+   .signier{
+       display: flex;
+       justify-content: center;
+       background-color: white;
+   }
+   */

@@ -1,0 +1,100 @@
+.titre{
+    text-align: center;
+  margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+.image{
+    width: 200px;
+    height: 200px;
+}
+.imgdiv{
+margin-left: 250px;
+}
+.titlediv{
+    margin-right: 310px;
+}
+.parent{
+    padding: 5px;
+    width:99%;
+    height:100%;
+
+   border: 1px solid black;
+    text-align: left;
+    display: flex;
+   text-align: left;
+   margin: auto;
+}
+.part1{
+    padding: 5px;
+       width:60%;
+       height:100%;
+   
+    
+     
+   }
+   .part2{
+       width:99%;
+       height:100%;
+       
+   }
+.parent .part2 input{
+    background-color:transparent;
+    text-align: center;
+    width: 20%;
+    height: 30px;   
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 14px;
+    color :black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:10px;
+    margin-top: 5px;
+}
+.parent .part1 input{
+    background-color:transparent;
+    text-align: center;
+    width: 45%;
+    height: 30px;   
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 14px;
+    color :black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:10px;
+    margin-top: 5px;
+}
+.parent .part1{
+    width: 100%;
+}
+.parent[checkbox]{
+    width: 10%;
+    height: 10px; 
+}
+
+.parent input:hover{
+    border: 1px solid black;
+}
+.parent label{
+    color:black;
+   background-color:transparent; 
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.inputbalance::placeholder{
+    color: black;
+    font-size: 13px;
+}
+.vise{
+    display: flex;
+}
+
+ 

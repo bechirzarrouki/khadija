@@ -1,0 +1,51 @@
+.deletf{
+top:0;}
+.deletfiche{
+    padding:25px;
+    width:60%;
+    height:40%;
+   /* background-color: rgba(255, 255, 255, 0.129);*/
+   background-color:white;/*rgb(255, 255, 255);*/
+   border: 1px solid black;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 2px;
+    position: fixed;
+    margin:auto;
+   left:200px;
+    text-align: center;
+    margin-top: 100px;
+}
+.verifiebtn{
+    width: 25%;
+    height: 30px;
+    font-size: 16px;
+    color:black;
+    background:#bbb9b9b5;
+    cursor: pointer;
+    border: 1.2px solid black;
+    margin-top: 10px;
+}
+.botton{
+    background-color: white;
+    text-align: end;
+}
+.deletfiche .btnd{
+    width: 15%;
+    height: 30px;
+    font-size: 16px;
+    color:black;
+    background:white;
+    cursor: pointer;
+    font-weight: 300;
+    border-radius: 2px;
+    margin-left: 3px;
+    margin-right: 2px;
+}
+.btnd:hover{
+    background:green;
+    color: white;
+    cursor: pointer;
+    font-weight: 0;
+}
+

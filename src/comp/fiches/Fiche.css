@@ -1,0 +1,556 @@
+    /* fiche page*/
+    .fiche{
+        padding:25px;
+        width:82%;
+        height:20%;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position:absolute;
+        left:270px;
+        text-align: center;
+        margin-top: 130px;
+    }
+    /*page ajouter fiche*/
+    .ajouterfiche{
+        padding:25px;
+        width:82%;
+        height:35%;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position: fixed;
+        left:270px;
+        text-align: center;
+        margin-top: 130px;
+    }
+    .ajouterfiche label{
+    color:black;
+    background-color:transparent; 
+    font-size: 17px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    }
+    .ajouterfiche input::placeholder{
+        color:black;
+        font-size: 10px;
+    }
+    .ajouterfiche input:focus{
+        transform: scale(0.97);
+        margin-left: 17px;
+        border-color:  rgb(57, 17, 85) ;
+        box-shadow:0px 0px 1px rgb(57, 17, 85) ; 
+    }
+    .ajouterfiche input{
+    text-align: center;
+    width: 80%;
+    height: 30px;
+    background:transparent;   
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 14px;
+    color :black;
+    margin-left: 17px;
+    margin-bottom:10px;
+    }
+    .ajouterfiche textarea{
+        text-align: center;
+        width: 80%;
+        height: 50px;
+        background:transparent;   
+        outline: none;
+        border: 1px solid black;
+        border-radius: 2px;
+        font-size: 14px;
+        color :black;
+        margin-left: 17px;
+        margin-bottom:10px;
+    }
+    .ajouterfiche textarea ::placeholder{
+        margin-top: 70px;
+        color:black;
+        font-size: 10px;
+    }
+    .btnajouter{
+    width: 100px;
+    height: 30px;
+    background : rgb(62, 36, 81);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 3px;
+    margin-left: 1120px;
+    margin-top: 10px;
+    }
+    .btnajouter:hover{
+        background-color:rgb(119, 81, 146) ;
+        cursor: pointer;
+    }
+
+    /*page consulter de fiche*/
+    .consult{
+        padding:25px;
+        width:82%;
+        height:30%;
+        background-color:white;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position:absolute;
+        left:270px;
+        text-align: center;
+        margin-top: 130px;
+    }
+    .entetfiche{
+        display: flex;
+        justify-content:space-between;
+        width:89% ;
+        background-color: transparent; 
+    }
+    .entetfiche p{
+        background-color:  transparent;
+        font-size: 18px;
+    }
+    /*liste des fiche existent et remplie*/
+    .listficheexisten{
+    padding:10px;
+    width:83%;
+    height:100%;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 1px;
+    position:absolute;
+    left:270px;
+    text-align: center;
+    margin-top: 240px; 
+    } 
+    .ficheexistent{
+        padding:25px;
+        width:82%;
+        height:13%;
+        background-color:white;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position: fixed;
+        left:270px;
+        text-align: center;
+        margin-top: 130px;
+    }
+    .ficheexistent input{
+        text-align: center;
+        width: 50%;
+        height: 30px;
+        background:transparent;   
+        outline: none;
+        border: 1px solid black;
+        border-radius: 2px;
+        font-size: 14px;
+        color :black;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .ficheexistent input::placeholder{
+        color:black;
+        font-size: 10px;
+    }
+    .ficheexistent input:focus{
+            transform: scale(0.97);
+            margin-left: 17px;
+            border-color:  rgb(57, 17, 85) ;
+            box-shadow:0px 0px 1px rgb(57, 17, 85) ; 
+        }
+    .btnrecherche{
+    width: 100px;
+    height: 30px;
+    background : rgb(62, 36, 81);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 3px;
+    margin-left: 8px;
+    }
+    .btnrecherche:hover{
+        background-color:rgb(119, 81, 146) ;
+    }
+    .ficheexistent p{
+        margin-top: 20px;
+        background-color: transparent;
+    }
+    .btnsupprimeretconsulter{
+    width: 100px;
+    height: 30px;
+    background : rgb(62, 36, 81);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 3px;
+    margin-left: 1120px;
+    margin-bottom: 5px;
+    }
+    .btnsupprimeretconsulter:hover{
+        background-color:rgb(119, 81, 146) ;
+    }
+    .listedesfichreplie{
+        padding:10px;
+        width:82%;
+        height:100%;
+        background-color:white;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position:absolute;
+        left:250px;
+        text-align: center;
+        margin-top: 240px; 
+    }
+    /*remplir*/
+    .remplirfiche{
+        padding:10px;
+        width:82%;
+        height:30%;
+        background-color:white;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 1px;
+        position: fixed;
+        left:270px;
+        text-align: center;
+        margin-top: 130px;
+    }
+    .remplirfiche p{
+        text-align: center;
+        background-color: transparent;
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .selectfiche{
+        background-color: transparent;
+        width: 40%;
+        height: 32px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .selectfiche option{
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        text-align: center;
+    }
+    .btnremplirfiche{
+        width: 100px;
+        height: 30px;
+        background : rgb(62, 36, 81);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, .2);
+        border-radius: 3px;
+        margin-left: 20px;
+    }
+    .btnremplirfiche:hover{
+        background-color:rgb(119, 81, 146) ;
+    }
+    /*side bar des fiches*/
+    .navfiche{
+            top:70px;
+            left:0;
+            height: 100%;
+            width: 17%;
+            position: fixed;
+            background-color:rgb(222, 216, 216);;
+        }
+    .btnlinks{
+        padding-bottom: 10px;
+        height: 40px;
+        width:245px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color:rgb(57, 17, 85);
+        font-size: 16px;
+        text-decoration: none;
+        background-color:rgb(206, 200, 200);
+        text-align: center;
+        border-radius: 3px;
+        border: none;
+    }
+    .links{
+        background-color: transparent;
+    }
+    .iconfiche{
+        background-color: transparent;
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        margin-top: 10px;
+    }
+    .btnlinks:hover{
+        background : rgba(62, 36, 81, 0.934);
+        color: white;
+        border: 1px solid  black;/*rgba(255, 255, 255, .2);*/
+        border-radius: 3px;
+    }
+    @media (max-width: 768px) {
+        /* Styles for tablets and smaller devices */
+        .navfiche{
+            margin-top: 12px;
+            display:inline;
+            background-color: transparent;
+        }
+        .fiche{
+        margin-left:10;
+            height:100%;
+            width: 63%;
+            border-radius: 1px;
+            text-align: left;
+        }
+
+    .remplirfiche,
+    .ficheexistent,
+    .listedesfichreplie,
+    .ajouterfiche,
+    .consult
+    {
+        height:100%;
+        width: 62%;
+            text-align: left;
+            margin-top: 130px;
+    }
+    .remplirfiche p{
+        text-align: left;
+        font-size: 16px;
+    }
+    .selectfiche{
+        width: 80%;
+        height: 32px;
+        text-align: center;
+    }
+    .selectfiche option{
+        background-color: white;
+        color: black;
+        font-size: 13px;
+        text-align: center;
+    }
+    .btnremplirfiche{
+        width: 100px;
+        height: 30px;
+    }
+    .btnsupprimeretconsulter{
+        width: 100px;
+        height: 30px;
+    margin-left: 200px;
+    margin-bottom: 5px;
+        }
+        .ajouterfiche label{ 
+        font-size: 14px;
+        margin-left: 9px;
+        margin-bottom: 5px;
+    }
+    .ajouterfiche input::placeholder{
+        color:black;
+        font-size: 9px;
+    }
+    .ajouterfiche input{
+        text-align: center;
+        width: 65%;
+        height: 30px;  
+        font-size: 13px;
+    }
+    .ajouterfiche input:focus{
+        transform: scale(0.97);
+        margin-left: 17px;
+        border-color:  rgb(57, 17, 85) ;
+        box-shadow:0px 0px 1px rgb(57, 17, 85) ; 
+    }
+    .entetfiche{
+        width:60% ;
+    }
+    .entetfiche p{
+        background-color:  transparent;
+        font-size: 16px;
+    }
+    .btnajouter{
+        width: 100px;
+        height: 30px;
+        margin-left: 100px;
+        margin-top: 10px;
+        }
+    }
+    @media (max-width: 576px) {
+        .navfiche{
+            margin-top: 12px;
+            display:inline;
+            background-color: transparent;
+        }
+        .fiche{
+        margin-left:10;
+            height:100%;
+            width: 63%;
+            border-radius: 1px;
+            text-align: left;
+        }
+
+    .remplirfiche,
+    .ficheexistent,
+    .listedesfichreplie,
+    .ajouterfiche,
+    .consult
+    {
+        height:100%;
+    width: 62%;;
+            text-align: left;
+            margin-top: 130px;
+    }
+    .remplirfiche p{
+        text-align: left;
+        font-size: 16px;
+    }
+    .selectfiche{
+        width: 50%;
+        height: 32px;
+        text-align: center;
+    }
+    .selectfiche option{
+        background-color: white;
+        color: black;
+        font-size: 13px;
+        text-align: center;
+    }
+    .btnremplirfiche{
+        width: 85px;
+        height: 30px;
+    }
+    .btnsupprimeretconsulter{
+        width: 100px;
+        height: 30px;
+    margin-left: 200px;
+    margin-bottom: 5px;
+        }
+        .ajouterfiche label{ 
+        font-size: 14px;
+        margin-left: 9px;
+        margin-bottom: 5px;
+    }
+    .ajouterfiche input::placeholder{
+        color:black;
+        font-size: 9px;
+    }
+    .ajouterfiche input{
+        text-align: center;
+        width: 60%;
+        height: 30px;  
+        font-size: 13px;
+    }
+    .ajouterfiche input:focus{
+        transform: scale(0.97);
+        margin-left: 17px;
+        border-color:  rgb(57, 17, 85) ;
+        box-shadow:0px 0px 1px rgb(57, 17, 85) ; 
+    }
+    .entetfiche{
+        width:60% ;
+    }
+    .entetfiche p{
+        background-color:  transparent;
+        font-size: 16px;
+    }
+    .btnajouter{
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+        }
+    }
+    .listesequipment {
+        width: 100%;
+    }
+    
+    .listesequipment table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .listesequipment th, .listesequipment td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    .listesequipment th {
+        background-color: #f2f2f2;
+        text-align: left;
+    }
+/* Modal Styles */
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal1 {
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    margin: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.modal-content input[type="text"],.modal-content input[type="email"],
+.modal-content input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.modal-content .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-content button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.modal-content button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+.modal-content button[type="button"]:hover {
+    background-color: #c82333;
+}

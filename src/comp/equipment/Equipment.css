@@ -1,0 +1,240 @@
+.navequip {
+  top: 70px;
+  left: 0;
+  height: 100%;
+  width: 17%;
+  position: fixed;
+  background-color: rgb(222, 216, 216);
+}
+
+/* ajouter equipment */
+.ajouterequipment {
+  padding: 25px;
+  width: 82%;
+  height: 40%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 1px;
+  position: fixed;
+  left: 270px;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.ajouterequipment label {
+  color: black;
+  background-color: transparent;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.ajouterequipment input::placeholder {
+  color: black;
+  font-size: 10px;
+}
+
+.ajouterequipment input:focus {
+  transform: scale(0.97);
+  margin-left: 17px;
+  border-color: rgb(57, 17, 85);
+  box-shadow: 0px 0px 1px rgb(57, 17, 85);
+}
+
+.ajouterequipment input {
+  text-align: center;
+  width: 80%;
+  height: 30px;
+  background: transparent;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 14px;
+  color: black;
+  margin-left: 17px;
+  margin-bottom: 10px;
+}
+
+.ajouterequipment textarea {
+  text-align: center;
+  width: 80%;
+  height: 50px;
+  background: transparent;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 14px;
+  color: black;
+  margin-left: 17px;
+  margin-bottom: 10px;
+}
+
+/* consult page */
+.consutpageequipment {
+  padding: 25px;
+  width: 83%;
+  height: 13%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 1px;
+  position: absolute;
+  left: 270px;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.consutpageequipment input {
+  text-align: center;
+  width: 50%;
+  height: 30px;
+  background: transparent;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 14px;
+  color: black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.consutpageequipment input::placeholder {
+  color: black;
+  font-size: 10px;
+}
+
+.consutpageequipment input:focus {
+  transform: scale(0.97);
+  margin-left: 17px;
+  border-color: rgb(57, 17, 85);
+  box-shadow: 0px 0px 1px rgb(57, 17, 85);
+}
+
+.listesequipment {
+  padding: 10px;
+  width: 83%;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 1px;
+  position: absolute;
+  left: 270px;
+  text-align: center;
+  margin-top: 240px;
+}
+
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller devices */
+  .navequip {
+      margin-top: 12px;
+      display: inline;
+      background-color: transparent;
+  }
+
+  .ajouterequipment,
+  .listesequipment,
+  .consutpageequipment {
+      height: 100%;
+      width: 62%;
+      text-align: left;
+      margin-top: 130px;
+  }
+
+  .ajouterequipment label {
+      font-size: 14px;
+      margin-left: 9px;
+      margin-bottom: 5px;
+  }
+
+  .ajouterequipment input::placeholder {
+      color: black;
+      font-size: 9px;
+  }
+
+  .ajouterequipment input {
+      text-align: center;
+      width: 60%;
+      height: 30px;
+      font-size: 13px;
+  }
+
+  .ajouterequipment input:focus {
+      transform: scale(0.97);
+      margin-left: 17px;
+      border-color: rgb(57, 17, 85);
+      box-shadow: 0px 0px 1px rgb(57, 17, 85);
+  }
+}
+
+@media (max-width: 576px) {
+  .navside {
+      margin-top: 12px;
+      display: inline;
+      background-color: transparent;
+  }
+
+  .ajouterequipment,
+  .listesequipment,
+  .consutpageequipment {
+      height: 100%;
+      width: 62%;
+      text-align: left;
+      margin-top: 130px;
+  }
+
+  .ajouterequipment label {
+      font-size: 14px;
+      margin-left: 9px;
+      margin-bottom: 5px;
+  }
+
+  .ajouterequipment input::placeholder {
+      color: black;
+      font-size: 9px;
+  }
+
+  .ajouterequipment input {
+      text-align: center;
+      width: 40%;
+      height: 30px;
+      font-size: 13px;
+  }
+}
+.test {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust the gap between inputs */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #f0f0f0; /* Set background color */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.test label {
+  font-weight: bold; /* Make labels bold */
+  margin-bottom: 5px; /* Add spacing below labels */
+}
+
+.test select, .test input[type="text"], .test input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 300px; /* Adjust the width of the inputs */
+}
+
+.test input[type="checkbox"] {
+  margin-right: 5px; /* Add spacing between checkbox and label */
+}
+
+.test button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px; /* Add spacing above button */
+}
+
+.test button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+

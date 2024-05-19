@@ -1,0 +1,127 @@
+.login{
+padding: auto;
+margin: auto;
+height: 100vh;
+width: 100%;
+align-items: center;
+justify-content: center;
+display: flex;   
+background-image:url(login-bg.jpg);
+background-repeat: no-repeat;
+}
+.logodelogin{
+width:50px;
+height: 50px;
+border-radius: 10px;
+margin-left: 135px;
+margin-top: 10px;
+}
+.head{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    padding-bottom: 10px;
+}
+.head p{
+    font-size: 29px;
+    margin-top: 19px;
+    margin-right: 150px;
+    background-color: white;
+    text-decoration: underline;
+    text-decoration-color:rgb(119, 81, 146) ;
+    color: rgb(62, 36, 81) ;
+}
+.ff{
+margin-top: 40px;
+border-radius: 10px;
+background:white;
+}
+.forme{
+text-align: center;
+background:white;
+color: black;
+width: 407px;
+height: 460px;
+border-radius: 10px;
+}
+.forme .boxinput{
+    background:white;
+    position: relative;
+    width: 98%;
+    height:50px;
+    margin:30px 0;
+}
+.boxinput input{
+    width: 95%;
+    height: 25%;
+    background:white;
+    border: 2px solid rgb(62, 36, 81); 
+    border-radius: 10px;
+    font-size: 14px;
+    color:black;
+    padding: 20px 45px 20px 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.boxinput input::placeholder{
+    color: rgb(62, 36, 81);
+    font-size: 17px;
+ 
+}
+.boxinput .icon{
+    background:transparent ;
+    position: absolute;
+    color: rgb(62, 36, 81) ;
+    right: 20px;
+    top:40%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.passspace{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.partie1{
+margin-right: 100px;
+padding: 10px;
+background-color: white;
+}
+.partie1 a{
+    color: rgb(62, 36, 81) ;
+    margin-top: 100px;
+    text-decoration: none;
+    background-color: white;
+}
+.partie2{
+    margin-left: 80px;
+    padding: 10px;
+    background-color: white;
+    }
+    .partie2 input{
+        width: 15px;
+        height: 15px;
+        margin-top: 5px;
+        margin-left: 3px;
+    }
+    .partie2 label{
+        color: rgb(62, 36, 81) ;
+        font-size: 16px;
+        background-color: white;
+    }
+ #send{
+    width: 95%;
+    height: 45px;
+    background : rgb(62, 36, 81);
+    color:white;
+    cursor: pointer;
+    font-size: 17px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#send:hover{
+    background-color:rgb(119, 81, 146) ;
+}
+
