@@ -1,147 +1,176 @@
-/*rgba(99, 98, 98, 0.103);*/
-.navbar{
-  height:70px;
+/* Navbar Styles */
+.navbar {
+  height: 70px;
   width: 100%;
-  background-color:rgb(216, 210, 210);
+  background-color: rgb(216, 210, 210);
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the navbar is on top */
 }
-.navicons{
-background-color: transparent;
-display: flex;
-margin-right:700px;
+
+/* Navbar Icons Container */
+.navicons {
+  background-color: transparent;
+  display: flex;
+  margin-right: 700px;
 }
-.navicons .iconsnav{
+
+.navicons .iconsnav {
   background-color: transparent;
   color: rgb(57, 17, 85);
   font-size: 18px;
   margin-right: 10px;
 }
-.navicons p{
+
+.navicons p {
   background-color: transparent;
   font-size: 20px;
   color: rgb(57, 17, 85);
   margin-right: 30px;
 }
 
-.logonav{
-border-radius: 50px;
-width: 60px;
-height: 60px;
-margin-left: 10px;
+/* Navbar Logo */
+.logonav {
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
 }
-.logonav:hover{
-  border: 1px solid  rgb(62, 36, 81);
+
+.logonav:hover {
+  border: 1px solid rgb(62, 36, 81);
 }
-#btnlogout{
+
+/* Logout Button */
+#btnlogout {
   width: 100px;
   height: 30px;
-  background : rgba(62, 36, 81, 0.934);
+  background: rgba(62, 36, 81, 0.934);
   color: white;
-  border: 1px solid  black;/*rgba(255, 255, 255, .2);*/
+  border: 1px solid black;
   border-radius: 3px;
   font-size: 14px;
 }
-#btnlogout:hover{
-  background-color:rgb(119, 81, 146) ;
+
+#btnlogout:hover {
+  background-color: rgb(119, 81, 146);
 }
-.navlink{
- background-color: transparent; 
- display: flex;
- align-items:center;
- justify-content: space-between;
- position: relative;
- height: 100%; 
- color:rgb(57, 17, 85);
- margin-right: 10px;
+
+/* Navbar Links */
+.navlink {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  color: rgb(57, 17, 85);
+  margin-right: 10px;
 }
-.dropmenu{
+
+/* Dropdown Menu */
+.dropmenu {
   margin: 10px;
-  background-color:transparent; 
-  color:rgb(57, 17, 85);
+  background-color: transparent;
+  color: rgb(57, 17, 85);
   font-size: 17px;
   position: relative;
   height: 50px;
-  text-decoration: none;
-  display: flex;
-  align-items:center;
   text-decoration: underline;
-text-decoration-color: rgb(62, 36, 81) ;
+  text-decoration-color: rgb(62, 36, 81);
+  display: flex;
+  align-items: center;
 }
-.icons{
-  background-color:transparent;
+
+/* Icons */
+.icons {
+  background-color: transparent;
   margin-right: 10px;
-  
 }
-.notif,.config{
-  background-color:transparent;
+
+/* Notification and Configuration Icons */
+.notif, .config {
+  background-color: transparent;
   width: 20px;
   height: 20px;
-  color:rgb(57, 17, 85);
-
+  color: rgb(57, 17, 85);
 }
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  /* Styles for tablets and smaller devices */
-  .navbar{
-    height:100px;
+  .navbar {
+    height: 100px;
+    flex-direction: column; /* Adjust direction for smaller screens */
+    padding: 10px 0;
   }
-  .navicons{
+
+  .navicons {
     margin-right: 10px;
-    }
-    .navicons .iconsnav{
-      font-size: 13px;
-      margin-right: 5px;
-    }
-    .navicons p{
-      font-size: 17px;
-      margin-right: 10px;
-      
-    }
-    .logonav{
+  }
+
+  .navicons .iconsnav {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+
+  .navicons p {
+    font-size: 17px;
+    margin-right: 10px;
+  }
+
+  .logonav {
     border-radius: 50px;
     width: 45px;
     height: 45px;
-    }
-    #btnlogout{
-      width: 80px;
-      height: 25px;
-      font-size: 12px;
-    }
-    .dropmenu{
-      font-size: 16px;
-      height: 30px;
-      text-decoration: none;;
-      text-decoration: underline;
-    }
+  }
+
+  #btnlogout {
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .dropmenu {
+    font-size: 16px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 576px) {
-  /* Styles for mobile devices */
-  .navbar{
-    height:100px;
+  .navbar {
+    height: 100px;
+    flex-direction: column; /* Adjust direction for smaller screens */
+    padding: 10px 0;
   }
-  .navicons{
+
+  .navicons {
     margin-right: 3px;
-    }
-    .navicons p{
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    .logonav{
+  }
+
+  .navicons p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .logonav {
     border-radius: 50px;
     width: 40px;
     height: 40px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     margin-left: 0;
-    }
-    #btnlogout{
-      width: 70px;
-      height: 25px;
-      font-size: 10px;
-    }
-    .dropmenu{
-      font-size: 12px;
-    }
+  }
+
+  #btnlogout {
+    width: 70px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .dropmenu {
+    font-size: 12px;
+  }
 }

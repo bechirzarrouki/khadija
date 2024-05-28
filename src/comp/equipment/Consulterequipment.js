@@ -7,6 +7,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen , faTrash } from '@fortawesome/free-solid-svg-icons';
 import moment from 'moment';
+import Navbar from "../navbar/Navbar";
 
 function Consulterequipment() {
     const navigate=useNavigate();
@@ -93,7 +94,11 @@ function Consulterequipment() {
 
     return (
         <div>
+            <Navbar/>
+            <div className='container'>
             <Sideequipment />
+
+            <div className='ajouterequipment'>
             <div className='nompage'>
                 <p>Listes des équipements:</p>
             </div>
@@ -137,7 +142,8 @@ function Consulterequipment() {
                     </tbody>
                 </table>
             </div>
-
+            </div>     
+            </div>       
             {/* Edit Modal */}
             <Modal isOpen={showEditModal}>
                 <div className="modal-content">

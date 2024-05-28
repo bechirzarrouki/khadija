@@ -6,7 +6,7 @@
     import axios from 'axios';
     import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
     import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
-
+    import Navbar from "../navbar/Navbar";
     function Listedesusers() {
         const [Users, setUsers] = useState([]);
         const [searchQuery, setSearchQuery] = useState('');
@@ -85,11 +85,14 @@
 
         return (
             <div>
+            <Navbar/>
+            <div className='container'>
                 <Sidebar />
+                <div className='ajouterequipment'>
                 <div className='nompage'>
                     <p> Listes des Utilisateurs :</p>
                 </div>
-                <div className='userrecherche'>
+                <div className='consutpageequipment'>
                     <input type="search" placeholder='Search' value={searchQuery} onChange={handleSearchChange} />
                     <button className='btnrecherche' onClick={handleSearchByMatricule}>Search</button>
                 </div>
@@ -132,7 +135,8 @@
                         </tbody>
                     </table>
                 </div>
-
+                </div>
+                </div>
                 {/* Edit Modal */}
                 <Modal style={{height:"400px"}} isOpen={showEditModal} onRequestClose={() => setShowEditModal(false)}>
                     <div className="modal-content">

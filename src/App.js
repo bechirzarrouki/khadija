@@ -47,8 +47,9 @@ import Terverification from './comp/les fiche/Thermomètre Min-Max/Terverificati
 
 /*
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css"*/
-import GeneratedFormPage from './comp/from'
+import GeneratedFormPage from './comp/fiches/from'
 import Test from './comp/test'
+import FicheDetails from './comp/fiches/FicheDetails'
 function App() {
   return (
 <div className='App'>
@@ -73,7 +74,7 @@ function App() {
      
       <Route path="/Ajouterequipment" element={<Ajouterequipment />}></Route>
       <Route path="/consultequipment" element={<Consulterequipment />}></Route>
-  
+      <Route path="/fiche/:id" element={<FicheDetails />} />
      
    
       <Route path="/espmetro" element={<Metro/>}></Route>

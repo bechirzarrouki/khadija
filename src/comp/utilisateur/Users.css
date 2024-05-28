@@ -180,8 +180,7 @@
        background-color:transparent; 
    }
    .nompage{
-       position: fixed;
-       margin-top: 85px;
+       margin-top: 20px;
        margin-left: 270px;
    }
    .nompage p{

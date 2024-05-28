@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import  './Dashbor.css';
 import Sidebar from "../utilisateur/Sidebar";
 function Dash(){
     return(

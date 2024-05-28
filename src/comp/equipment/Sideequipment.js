@@ -10,7 +10,6 @@ return (
   <div>
 
 <div className="sidebar">
-<Navbar/>
   <div className="navequip">
     {Dataequipment.map((item, index) => {
     return (
