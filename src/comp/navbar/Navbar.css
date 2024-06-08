@@ -1,8 +1,12 @@
 /* Navbar Styles */
+.App{
+  background-image:url(login-bg.jpg);
+background-repeat: no-repeat;
+}
 .navbar {
   height: 70px;
   width: 100%;
-  background-color: rgb(216, 210, 210);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;

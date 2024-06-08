@@ -1,5 +1,5 @@
     import React, { useState, useEffect } from 'react';
-    import { Link } from 'react-router-dom';
+    import { useNavigate } from 'react-router-dom';
     import Modal from 'react-modal';
     import './Users.css';
     import Sidebar from './Sidebar';
@@ -8,6 +8,7 @@
     import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
     import Navbar from "../navbar/Navbar";
     function Listedesusers() {
+        const navigate=useNavigate();
         const [Users, setUsers] = useState([]);
         const [searchQuery, setSearchQuery] = useState('');
         const [showEditModal, setShowEditModal] = useState(false);
@@ -68,6 +69,7 @@
                 await axios.put(`http://localhost:8000/api/update/${selectedUserId}`, editForm);
                 fetchData();
                 setShowEditModal(false);
+                navigate('/Listedesusers');
             } catch (error) {
                 console.error('Error updating user:', error);
             }
@@ -78,6 +80,7 @@
                 await axios.delete(`http://localhost:8000/api/delete/${userId}`);
                 fetchData();
                 setShowDeleteModal(false);
+                navigate('/Listedesusers');
             } catch (error) {
                 console.error('Error deleting user:', error);
             }
@@ -115,7 +118,7 @@
                                 Users.map((user) => (
 
                                     <tr key={user.id}>
-                                        <td><Link to={{ pathname: `/consult`, state: { userId: user.id } }}>{user.name}</Link></td>
+                                        <td>{user.name}</td>
                                         <td>{user.matricule}</td>
                                         <td>{user.email}</td>
                                         <td>{user.poste}</td>

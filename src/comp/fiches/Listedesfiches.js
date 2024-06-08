@@ -65,7 +65,7 @@ function Listedesfiches() {
         try {
             await axios.put(`http://localhost:8000/api/fiches/${selectedFicheId}`, editForm);
             fetchData();
-            navigate('/Listedesusers');
+            navigate('/Listedesfiches');
             setShowEditModal(false);
         } catch (error) {
             console.error('Error updating fiche:', error);
@@ -76,7 +76,7 @@ function Listedesfiches() {
         try {
             await axios.delete(`http://localhost:8000/api/fiches/${id}`);
             fetchData();
-            navigate('/Listedesusers');
+            navigate('/Listedesfiches');
             setShowDeleteModal(false);
         } catch (error) {
             console.error('Error deleting fiche:', error);

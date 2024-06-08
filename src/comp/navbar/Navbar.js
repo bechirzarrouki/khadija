@@ -9,11 +9,10 @@ import { VscGear } from "react-icons/vsc";
 import './Navbar.css';
 function Navbar(){
 return(
-<div >
+<div className='khra'>
 <div className='navbar'>
     <img className='logonav' src={logonav} />
     <div className='navicons'>
-    <p>Prince Médicale Industry </p>
     <Link to='/notif' className='iconsnav'><IoNotifications  className='notif'/></Link>
     <Link to='/config' className='iconsnav'>< VscGear    className='config'/></Link>
     </div>

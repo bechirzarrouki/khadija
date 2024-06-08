@@ -49,12 +49,14 @@ function Ajouterfiche() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         let combinedData = {
-            ...formData,
+            "name":formData.name,
+            "description":formData.description,
             data: JSON.stringify(dynamicFormData)
         };
         console.log(combinedData);
         try {
             const response = await axios.post('http://localhost:8000/api/fiches', combinedData);
+            console.log(response);
             navigate('/Listedesfiches');
         } catch (error) {
             console.error('Erreur lors de l\'ajout de la fiche:', error);

@@ -11,7 +11,7 @@ import html2canvas from 'html2canvas';
 function FicheDetails() {
     const { id } = useParams();
     const [fiche, setFiche] = useState(null);
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         const fetchFicheDetails = async () => {
@@ -19,6 +19,7 @@ function FicheDetails() {
                 const response = await axios.get(`http://localhost:8000/api/fiches/${id}`);
                 setFiche(response.data);
                 setData(JSON.parse(response.data.data));
+                console.log(JSON.parse(response.data.data));
             } catch (error) {
                 console.error('Error fetching fiche details:', error);
             }
@@ -56,8 +57,8 @@ function FicheDetails() {
                         <p><strong>Description:</strong> {fiche.description}</p>
                         <p><strong>Date d'Ajout:</strong> {fiche.created_at}</p>
                         <p><strong>Date de mise à jour:</strong> {fiche.updated_at}</p>
-                        {data.map((option, optionIndex) => (
-                            <p key={optionIndex}><strong>{option.placeholder}:</strong> {option.value}</p>
+                        {data.length>0 && data.map((option, optionIndex) => (
+                            <p key={optionIndex}><strong>{option.placeholder}:</strong> {JSON.stringify(option.value)}</p>
                         ))}
                     </div>
                     <button onClick={handleDownloadPDF} className='btn-download'>Download as PDF</button>

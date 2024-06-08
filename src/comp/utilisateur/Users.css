@@ -119,18 +119,18 @@
     }
     /*ajouter user*/
     .ajoutuser{
+        background-color: rgba(255, 255, 255, 0.788);
+        margin-left: 250px;
+        bottom: 120px;
+        position: fixed;
         padding:25px;
         width:82%;
         height:58%;
-       background-color:white;
         backdrop-filter: blur(50px);
         box-shadow: 0 0 10px rgba(0,0,0,.2);
         border-radius: 1px;
-        position: fixed;
-        left:270px;
         text-align: left;
-        margin-top: 130px;
-   }
+    }
    .ajoutuser label{
        color:black;
       background-color:transparent; 

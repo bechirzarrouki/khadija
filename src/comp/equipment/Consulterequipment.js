@@ -68,7 +68,7 @@ function Consulterequipment() {
         try {
             await axios.delete(`http://localhost:8000/api/equipements/${equipmentId}`);
             fetchData();
-            navigate('/Listedesfiches');
+            navigate('/consultequipment');
             setShowDeleteModal(false);
         } catch (error) {
             console.error('Error deleting equipment:', error);
@@ -85,7 +85,7 @@ function Consulterequipment() {
         try {
             await axios.put(`http://localhost:8000/api/equipements/${selectedEquipmentId}`, editFormData);
             fetchData();
-            navigate('/Listedesfiches');
+            navigate('/consultequipment');
             setShowEditModal(false);
         } catch (error) {
             console.error('Error updating equipment:', error);

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Users.css';
 import axios from 'axios';
 import Sidebar from './Sidebar';
 
 function Ajouter() {
+    const navigate=useNavigate();
     const [formData, setFormData] = useState({
         name: '',
         matricule: '',
@@ -27,7 +29,7 @@ function Ajouter() {
         try {
             const response = await axios.post('http://localhost:8000/api/register', formData);
             console.log('Data sent successfully:', response.data);
-            // Add your logic for handling successful API response
+            navigate('/Listedesusers');
         } catch (error) {
             console.error('Error sending data:', error);
             // Add your logic for handling errors during API call
@@ -37,10 +39,11 @@ function Ajouter() {
     return (
         <div >
             <Sidebar/>
+            
+            <div className='ajoutuser'>
             <div className='nompage'>
                 <p>Ajouter un Utilisateur :</p>
             </div>
-            <div className='ajoutuser'>
                 <label htmlFor='name'>Nom et prénom :</label>
                 <input id="name" type="text" placeholder='Name' onChange={handleChange} />
                 <br />
