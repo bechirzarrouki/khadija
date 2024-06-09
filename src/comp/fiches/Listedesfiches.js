@@ -37,10 +37,19 @@ function Listedesfiches() {
 
     const handleSearchByName = async () => {
         try {
-            const response = await axios.get(`http://localhost:8000/api/fiches?name=${searchQuery}`);
+            if(searchQuery!==''){
+            const response = await axios.get(`http://localhost:8000/api/fiches/search`,{
+                params:{
+                    name:searchQuery
+                }
+            });
+            console.log(response.data);
             setFiches(response.data);
+        }else{
+            fetchData();
+        }
         } catch (error) {
-            console.error('Error searching by name:', error);
+            console.error('Error searching by matricule:', error);
         }
     };
 

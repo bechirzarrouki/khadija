@@ -7,6 +7,7 @@
     import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
     import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
     import Navbar from "../navbar/Navbar";
+import { Search } from '@mui/icons-material';
     function Listedesusers() {
         const navigate=useNavigate();
         const [Users, setUsers] = useState([]);
@@ -36,9 +37,18 @@
         };
 
         const handleSearchByMatricule = async () => {
-            try {
-                const response = await axios.get(`http://localhost:8000/api/index?matricule=${searchQuery}`);
-                setUsers(response.data);
+                try {
+                    if(searchQuery!==''){
+                    const response = await axios.get(`http://localhost:8000/api/fiches/search`,{
+                        params:{
+                            name:searchQuery
+                        }
+                    });
+                    console.log(response.data);
+                    setUsers(response.data.users);
+                }else{
+                    fetchData();
+                }
             } catch (error) {
                 console.error('Error searching by matricule:', error);
             }

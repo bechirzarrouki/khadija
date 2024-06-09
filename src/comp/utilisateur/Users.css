@@ -121,11 +121,11 @@
     .ajoutuser{
         background-color: rgba(255, 255, 255, 0.788);
         margin-left: 250px;
-        bottom: 120px;
+        top: 150px;
         position: fixed;
         padding:25px;
         width:82%;
-        height:58%;
+        height:68%;
         backdrop-filter: blur(50px);
         box-shadow: 0 0 10px rgba(0,0,0,.2);
         border-radius: 1px;

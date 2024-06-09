@@ -64,12 +64,13 @@ function Ajouterfiche() {
     };
 
     return (
-        <div>
+        <div className='container'>
             <Sidebarfiche1 />
+
+            <div className="ajouterequipment">
             <div className='nompage'>
                 <p>Ajouter une nouvelle fiche :</p>
             </div>
-            <div className="ajouterequipment">
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="name">Nom du fiche :</label>
                     <input 

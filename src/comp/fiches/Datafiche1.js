@@ -16,30 +16,6 @@ import { VscCopy } from "react-icons/vsc";
 /*import { FiFolderMinus } from "react-icons/fi"FiFolderMinus boton eli tfasa5 ficha */
 export const Datafiche1 = [
   {
-    title: "Fiches",
-    path: "/fiche",
-    icon: <SiGoogleforms  className="iconfiche" />,
-    cName: "sidedata",
-  },
-  {
-    title: "Remplir_fiche",
-    path: "/Remplir",
-    icon: <TfiWrite  className="iconfiche"/>,
-    cName: "sidedata",
-  },
-  {
-    title: "Listes_des_fiches_remplie",
-    path: "/Listefichesremplie",
-    icon: <BsCardChecklist className="iconfiche"/>,
-    cName: "sidedata",
-  },
-  {
-    title: "Consulter_les_fiches",
-    path: "/consulter",
-    icon: <VscSymbolKeyword className="iconfiche"/>,
-    cName: "sidedata",
-  },
-  {
     title: "Ajouter_nouvelle_fiche",
     path: "/Ajouter-fiche",
     icon: <FiFolderPlus className="iconfiche"/>,

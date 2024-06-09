@@ -271,6 +271,7 @@
         border: none;
     }
     .links{
+        height: 40px;
         background-color: transparent;
     }
     .iconfiche{

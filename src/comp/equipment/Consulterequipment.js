@@ -44,10 +44,19 @@ function Consulterequipment() {
 
     const handleSearchByName = async () => {
         try {
-            const response = await axios.get(`http://localhost:8000/api/equipments?name=${searchQuery}`);
+            if(searchQuery!==''){
+            const response = await axios.get(`http://localhost:8000/api/e/search`,{
+                params:{
+                    name:searchQuery
+                }
+            });
+            console.log(response.data);
             setEquipments(response.data);
+        }else{
+            fetchData();
+        }
         } catch (error) {
-            console.error('Error searching by name:', error);
+            console.error('Error searching by matricule:', error);
         }
     };
 

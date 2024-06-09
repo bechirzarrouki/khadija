@@ -9,7 +9,7 @@ function Sidebarfiche1() {
 return (
 <div className="sidefiche">
 <Navbar/>
-<div className="navfiche">
+<div className="navequip">
     {Datafiche1.map((item, index) => {
     return (
       <Link  className='links' to={item.path}><button className="btnlinks">{item.icon}{item.title}</button></Link>  );})}

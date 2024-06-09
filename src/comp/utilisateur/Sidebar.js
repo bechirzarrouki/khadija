@@ -11,7 +11,7 @@ return (
 
 <div className="sidebar">
 <Navbar/>
-  <div className="navside">
+  <div className="navequip">
     {Sidedata.map((item, index) => {
     return (
       <Link className='links' to={item.path}><button className="btnlinks" >{item.icon}{item.title}</button></Link>

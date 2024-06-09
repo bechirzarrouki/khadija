@@ -37,7 +37,7 @@ function Ajouter() {
     };
 
     return (
-        <div >
+        <div className='container'>
             <Sidebar/>
             
             <div className='ajoutuser'>

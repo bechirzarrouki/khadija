@@ -12,7 +12,8 @@
   height: calc(100% - 70px); /* Adjust height to fit below the navbar */
   width: 17%;
   position: fixed;
-  background-color: rgb(222, 216, 216);
+  display: flex;
+  flex-direction: row   ;
   z-index: 1000; /* Ensure sidebar is on top */
   padding-top: 10px; /* Add some padding at the top */
 }
@@ -36,7 +37,7 @@
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   border-radius: 1px;
-  margin-top: 130px;
+  margin-top: 150px;
 }
 
 .ajouterequipment label {
